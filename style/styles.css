@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #1F1F1F;
+  --text-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  min-height: 75vh;
+  width: 49%;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #303030;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+.screen {
+  background-color: #9acd32;
+  grid-column: span 4;
+  margin: auto 0 25px 0;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.button {
+  height: 6rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: #303030;
+  cursor: pointer;
+}
+
+.clear {
+  background-color: #ff4d4d;
+}
+
+.clear p,
+.operation p,
+.calculate p {
+  color: white;
+  font-size: 60px;
+}
+
+.operation {
+  background-color: #efaf00;
+}
+
+.add {
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+
+.calculate {
+  grid-row: 4 / span 3;
+  height: 94%;
+  grid-column-start: 4;
+  background-color: #4b22b0;
+}
+
+.button.number {
+  color: black;
+  font-size: 50px;
+}
+
+@media (max-width: 700px) {
+  body {
+    align-items: flex-start;
+  }
+  .calculator {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    
+  }
+
+  .screen {
+    height: 9cap;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin: 10px 2px 20px 2px;
+  }
+
+  .button {
+    height: 100px;
+    margin: 6px;
+    font-size: 1.2rem;
+  }
+
+  .clear p,
+  .operation p,
+  .calculate p,
+  .button.number {
+    font-size: 1.5rem;
+  }
+
+  .calculate {
+    grid-row: 4 / span 3;
+    height: 100%;
+  }
+}
