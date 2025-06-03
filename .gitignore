@@ -1,0 +1,33 @@
+# macOS system files
+.DS_Store
+
+# Node modules (only if you use npm packages)
+node_modules/
+
+# Build output (if you end up using a bundler or compiler)
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment variables (just in case)
+.env
+.env.local
+.env.*
+
+# Cache
+.cache/
